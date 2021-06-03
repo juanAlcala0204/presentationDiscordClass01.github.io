@@ -1,0 +1,215 @@
+<!doctype html>
+
+<!--
+  A presentation done entirely in Markdown, as found in extras/markdown/.
+  
+  By: @henrikingo
+-->
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Markdown in impress.js | by Henrik Ingo @henrikingo</title>
+    
+    <meta name="description" content="Authoring impress.js presentations in Markdown" />
+    <meta name="author" content="Henrik Ingo" />
+    <link rel="stylesheet" href="../../extras/highlight/styles/github.css">
+
+    <!-- Common styles for example presentations -->  
+    <link href="..\..\css\impress-common.css" rel="stylesheet" />  
+    <!--
+        Styles specific for this example presentation. 
+    -->
+    <link href="css/markdown-slides.css" rel="stylesheet" />
+    <link href="css/devopsy.css" rel="stylesheet" />
+    <link href="css/effects.css" rel="stylesheet" />
+    
+</head>
+
+<body class="impress-not-supported">
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress" data-transition-duration="1000">
+
+<div id="markdown" class="step slide markdown" data-rel-x="0" data-rel-y="900">
+# Clase JavaScript Principiantes 
+## By Sin_Nombre
+
+* Esta presentación contiene la introducción a las clases.
+* Recuerda descargar Visual Studio Code
+  * Editor de Código necesario para las próximas clases.
+
+-----
+# Temario del Día
+
+* Qué es Javascript
+* Variables
+* Operadores
+* Condicionales
+
+-----
+# Notas Clase
+
+* Si tienes alguna pregunta, enciende en microfono y dime, no muerdo.
+* ...ninguna pregunta es tonta, tonto es aquel que no pregunta cuando no entiende!
+
+
+-----
+# JavaScript
+
+![Mother Teresa holding a newborn baby](images/javascriptImage1.png)
+
+> "Si querer página dinámica, JavaScript ser camino."
+
+*-- Sin_Nombre*
+
+Image credit: Google
+
+-----
+# ¿Qué es JavaScript?
+
+Javascript es un lenguaje de programación interpretado o compilado just-in-time.También conocido como un lenguaje
+de scripting ( secuencia de comandos ), Imperativo y con tipado débil.
+
+        // Mi primer hola mundo :) .
+        var hiWorld = "Hola Mundo"
+
+        alert(hiWorld);
+        alert(hiWorld + "Que pro soy");
+        alert(hiWorld + "Ahora sigue dominar el mundo");
+        alert(hiWorld + "No mms, me pase de verga");
+
+-----
+
+# ¿Por qué aprenderlo?
+
+* Este es el lenguaje de programación mas utilizado en la actualidad
+y casi cerca de 14 millones de desarrolladores en el mundo programan en el.
+
+`-----`
+
+* Si quieres darle interactividad a tu página necesitarás de JavaScript.
+* Gran parte de la gama de empleos hoy en día afertada son acerca de este lenguaje
+  de programación y frameworks creados a partir de este como:
+  * React, Angular, VueJS.
+</div>
+
+<div id="title-slide" class="step slide title markdown" data-x="2000" data-y="5000">
+# What about me?
+## Soy Juan David Alcala, Desarrollador de Software con cerca de 3 años de experiencia en el campo usando JavaScript.
+</div>
+
+
+<div id="tilted-slide" class="step slide markdown" data-rotate="-85" data-x="2000" data-y="2000" data-z="1000" data-scale="4">
+# ¿Estás Listo? Hora de Empezar!
+  
+* ¿Como incluir Javascript en tu proyecto?
+* ¿Como declarar una variable en Javascript?, 
+* ¿Tipos de Datos (String, Number, Boolean)?
+* ¿Que es Undefined, Null, NaN? 
+* ¿Scope en variables?, ¿Declaración Let, Var, Const?.
+</div>
+
+<div class="step slide title markdown" data-rotate="-85" data-x="4000" data-y="2000" data-markdown-dialect="Maruku">
+* Pruebas con Prompt.
+* Operadores de Asignación.
+  * Un operador de asignación asigna un valor al operando de la izquierda basado en el valor del operando de la derecha.
+  * Asignación ( = ) , Adición ( += ), sustración ( -= ), multiplicación, ( *= ), división ( /= ), resto ( %= ), exponenciación ( **= )
+</div>
+
+<div class="step slide title markdown" data-rotate="-85" data-x="5000" data-y="2000" data-markdown-dialect="Maruku">
+  # Operadores aritméticos.
+  
+  * Los operadores Aritméticos toman valores numéricos como sus operandos y retornan un valor numérico único.
+  * Addición ( + ), Decrementación ( -- ), División ( / ), Exponenciación ( ** ), Incrementación ( ++ ), Multiplicación ( * )
+  
+</div>
+<div  class="step slide title markdown" data-rotate="-85" data-x="6000" data-y="2000" data-markdown-dialect="Maruku">
+  # Operadores Comparación.
+
+  * Los operadores de comparación comparan dos expresiones y devuelven un valor Boolean que representa la relacion de sus valores
+  * Igualdad ( == ), Diferentes ( != ), Identicos ( === ), No Identicos ( !== ), Mayor que ( > ), Menor que ( < ),
+  Mayor igual que ( >= ), Menor igual que ( <= )
+
+</div>
+
+<div class="step slide title markdown" data-rotate="-85" data-x="7000" data-y="2000" data-markdown-dialect="Maruku">
+  # Operadores Lógicos.
+
+  * Los operadores de lógicos nos devuelven un resultado a partir de que cumpla o no una condición, su resultado es booleano
+  * AND ( && ) , OR ( || ), NOT ( ! )
+</div>
+
+<div id="tilted-slide2" class="step slide markdown" data-rotate="-85" data-x="9000" data-y="3000" data-z="1000" data-scale="4">
+  # Condicionales.
+  
+  * Una condicional es una sentencia que nos sirve para validar una condición y base a este se ejecuta cierto bloque de código.
+  * Sintaxis : If ( condition ) { }
+</div>
+
+<script type="text/javascript">
+var enableBwCss = function(){
+    disableDevopsCss();
+    disableEffectsCss();
+};
+
+var enableDevopsCss = function(){
+    document.body.classList.add("devopsy");
+    disableEffectsCss();
+};
+
+var disableDevopsCss = function(){
+    document.body.classList.remove("devopsy");
+};
+
+var enableEffectsCss = function(){
+    document.body.classList.add("effects");
+    disableDevopsCss();
+};
+
+var disableEffectsCss = function(){
+    document.body.classList.remove("effects");
+};
+</script>
+
+
+<div id="js-slide" class="step slide" data-rotate="0" data-x="4000" data-y="5000">
+<h1>Terminamos nuestra clase! Homework Time :) </h1>
+
+<p>Realiza un programa donde recibas un número del usuario y imprime si ese número es 
+   par o impar:</p>
+
+<p>La próxima clase veremos cual fue tu solución!</p>
+
+</div>
+
+
+<div id="overview" class="step" data-x="5000" data-y="4000" data-scale="10" style="pointer-events: none;" data-rotate="5">
+</div>
+
+
+</div>
+
+<div id="impress-toolbar"></div>
+<div id="impress-help"></div>
+
+
+<!-- Extra modules
+     Load highlight.js, mermaid.js and markdown.js from extras.
+     See also src/plugins/extras/extras.js -->
+<script type="text/javascript" src="../../extras/highlight/highlight.pack.js"></script>
+<script type="text/javascript" src="../../extras/mermaid/mermaid.min.js"></script>
+<script type="text/javascript" src="../../extras/markdown/markdown.js"></script>
+
+<!--
+    To make all described above really work, you need to include impress.js in the page.
+    You also need to call a `impress().init()` function to initialize impress.js presentation.
+    And you should do it in the end of your document. 
+-->
+<script type="text/javascript" src="../../js/impress.js"></script>
+<script>impress().init();</script>
+</body>
+</html>
